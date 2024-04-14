@@ -7,8 +7,8 @@ function App() {
   const [typing, setTyping] = useState(false);
   const [messages, setMessages] = useState([
     {
-      message: "Hello, how can I help today?",
-      sender: "NousHermes",
+      message: "Hello, how can I treat your woes today?",
+      sender: "MindfulMentor",
       direction: "incoming"
     }
   ])
@@ -45,7 +45,7 @@ function App() {
     }).then((data) =>{
       const newMessage = {
         message: data.response,
-        sender: "NousHermes",
+        sender: "MindfulMentor",
         direction: "incoming"
       };
       const newMessages = [...messages, userPrompt, newMessage];
@@ -57,13 +57,13 @@ function App() {
   }
 
   return (
-    <div className='my-chat-container'>
-      <div style={{position: "relative", height:"400px", width: "750px"}}>
+    <div className='App'>
+      <div style={{position: "relative", height:"450px", width: "750px"}}>
         <MainContainer >
           <ChatContainer >
             <MessageList
               scrollBehavior='smooth'
-              typingIndicator={typing ? <TypingIndicator content="NousHermes is typing" />: null}
+              typingIndicator={typing ? <TypingIndicator content="MindfulMentor is typing" />: null}
             >
               {messages.map((message, i) => {
                 return <Message key={i} model={message} />

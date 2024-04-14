@@ -13,8 +13,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.header {
+  display: flex;
+  justify-content: flex-end;
+  height: 90px;
+}
+
+.bot {
+  height: 200px;
+  width: 200px;
+  margin-right: 100px;
+}
+
 h1 {
   font-size: 2.0em;
   line-height: 1.1;
   text-align: center;
+  margin-right: 150px;
 }

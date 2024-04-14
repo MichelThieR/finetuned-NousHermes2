@@ -9,7 +9,8 @@
   text-align: left;
 }
 
-.my-chat-container {
+.App {
   display: flex;
   justify-content: center;
 }
+
